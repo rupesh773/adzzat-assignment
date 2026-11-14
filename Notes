@@ -1,0 +1,20 @@
+# Notes
+
+## 1. What I Checked & Changed
+<!-- Replace with your real observations. Examples to confirm and keep ONLY what is true: -->
+- Ran both Docker builds and the graders: each fails before `solve.sh` and passes after.
+- Task 1: ... (e.g. read `instruction.md` only; did I find both bugs? Was the 40-hour rule / rounding clear?)
+- Task 2: ... (e.g. was it clear what happens on tied timestamps, malformed lines, which service counts when a duplicate changes service?)
+- Changes I made after the dry run: ...
+
+## 2. What I Would Do Next
+- Task 2: regenerate a hidden log at grading time to stop a hardcoded answer.
+- Run both tasks against a real agent (free/local model) and tune difficulty.
+- Add tests for the web API (`/api/tasks` shape) and a Dockerfile for the web app.
+- Render the instruction markdown with a proper library instead of the small built-in renderer.
+
+## 3. AI Tools Used & Where I Corrected Them
+- Tool(s) used: ... (name and how)
+- Mistakes I found and fixed (be specific and honest):
+  - The Task 1 Dockerfile installed `python3-pytest`, but no plain `pytest` command existed; I changed the test runner to `python3 -m pytest`.
+  - ...
